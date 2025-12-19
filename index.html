@@ -2,176 +2,48 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Colonialismo Epistêmico e Islamofobia</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto - Colonialismo Epistêmico e Islamofobia</title>
 
-    <script>
-        const base = location.hostname.includes('github.io')
-            ? '/Projeto-Islamofobia/'
-            : '/';
+  <!-- FONTS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap"
+    rel="stylesheet">
 
-        document.write(`<base href="${base}">`);
-    </script>
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    <!-- FONTS -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap"
-        rel="stylesheet" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/nav-footer.css" />
-    <link rel="stylesheet" href="css/responsivo.css" />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- JS -->
-    <script src="js/main.js" defer></script>
-    <script src="js/nav-footer.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+  <!-- CSS (RELATIVO) -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nav-footer.css">
+  <link rel="stylesheet" href="css/responsivo.css">
 </head>
 
 <body>
-    <div id="header"></div>
-    <div id="progress-bar"></div>
-    <main class="home">
-        <section class="hero" data-aos="fade-up">
-            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-                <h1>
-                    <span>Colonialismo Epistêmico</span><br />
-                    & Islamofobia
-                </h1>
-                <p>
-                    Uma análise crítica sobre a marginalização de grupos de referencial islâmico nas estruturas
-                    socioculturais do Ocidente contemporâneo.
-                </p>
-                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
-                    <a href="pages/teoria/colonialismo.html" class="btn primary">Começar pela teoria</a>
-                    <a href="pages/interativo/experiencia.html" class="btn secondary">Vivenciar experiências</a>
-                </div>
-            </div>
-        </section>
 
-        <section class="carousel" aria-label="Citações sobre colonialismo epistêmico e islamofobia" data-aos="fade-up">
-            <div class="slides">
-                <div class="slide active">
-                    <blockquote>“O Islã tem sido historicamente representado como o oposto cultural do Ocidente.”
-                    </blockquote>
-                    <cite>— Samira Haj, <em>Reconfiguring Islamic Tradition</em></cite>
-                </div>
-                <div class="slide">
-                    <blockquote>“O Oriente foi quase uma invenção europeia, desde a Antiguidade, um lugar de romance,
-                        seres exóticos, memórias e paisagens obsessivas.”</blockquote>
-                    <cite>— Edward Said, <em>Orientalismo</em></cite>
-                </div>
-                <div class="slide">
-                    <blockquote>“O colonialismo não se contenta em impor sua lei ao presente e ao futuro do país
-                        dominado. Ele distorce, desfigura e destrói o passado do povo oprimido.”</blockquote>
-                    <cite>— Frantz Fanon, <em>Os Condenados da Terra</em></cite>
-                </div>
-                <div class="slide">
-                    <blockquote>“O subalterno pode falar?”</blockquote>
-                    <cite>— Gayatri Chakravorty Spivak, <em>Can the Subaltern Speak?</em></cite>
-                </div>
-                <div class="slide">
-                    <blockquote>“Não há justiça social global sem justiça cognitiva global.”</blockquote>
-                    <cite>— Boaventura de Sousa Santos, <em>Epistemologias do Sul</em></cite>
-                </div>
-            </div>
-            <button class="carousel-btn prev" aria-label="Citação anterior">‹</button>
-            <button class="carousel-btn next" aria-label="Próxima citação">›</button>
-        </section>
+  <header></header>
 
-        <section class="section context" data-aos="fade-left">
-            <h2>Por que este projeto?</h2>
-            <p>
-                O crescimento da <span class="glossario" data-glossario
-                    title="Preconceito, hostilidade ou discriminação contra pessoas muçulmanas">islamofobia</span>,
-                aliado a conflitos geopolíticos recentes, evidencia a permanência de estruturas coloniais no modo como o
-                conhecimento é produzido, legitimado e difundido no Ocidente.
-            </p>
-            <p>
-                Este site propõe uma abordagem crítica, combinando teoria, análise midiática e experiências interativas
-                para estimular a reflexão.
-            </p>
-        </section>
+  <main>
+    <div class="progress-bar"></div>
+  </main>
 
-        <section class="section caminhos" data-aos="fade-right">
-            <h2>Caminhos de exploração</h2>
-            <div class="cards">
-                <div class="card" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Base Teórica</h3>
-                    <p>Conceitos fundamentais sobre <span class="glossario" data-glossario
-                            title="Processo pelo qual o conhecimento de sociedades não ocidentais é desvalorizado ou marginalizado">colonialismo
-                            epistêmico</span>, islamofobia e suas intersecções históricas e culturais.</p>
-                    <a href="pages/teoria/colonialismo.html">Acessar</a>
-                </div>
-                <div class="card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Narrativas e Mídia</h3>
-                    <p>Análise crítica da representação do Islã e de povos árabes nos meios de comunicação ocidentais,
-                        considerando <span class="glossario" data-glossario
-                            title="Ideias simplificadas que generalizam características de um grupo">estereótipos</span>
-                        e desumanização.</p>
-                    <a href="pages/midia/narrativas.html">Explorar</a>
-                </div>
-                <div class="card" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Experiências Interativas</h3>
-                    <p>Atividades que convidam o usuário a refletir sobre discursos, estereótipos e formas de <span
-                            class="glossario" data-glossario
-                            title="Silenciamento ou invisibilização de vozes marginalizadas">silenciamento</span>.</p>
-                    <a href="pages/interativo/experiencia.html">Participar</a>
-                </div>
-            </div>
-        </section>
+  <footer></footer>
 
-        <section class="section stats" data-aos="fade-up">
-            <h2>Dados relevantes</h2>
-            <div class="stats-cards">
-                <div class="stat-card" data-aos="fade-left" data-aos-delay="100">
-                    <h3>65%</h3>
-                    <p>da população ocidental tem visões estereotipadas sobre o Islã.</p>
-                </div>
-                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
-                    <h3>120+</h3>
-                    <p>estudos acadêmicos recentes analisam impactos do colonialismo epistêmico.</p>
-                </div>
-                <div class="stat-card" data-aos="fade-right" data-aos-delay="300">
-                    <h3>50%</h3>
-                    <p>dos conteúdos midiáticos retratam de forma distorcida culturas islâmicas.</p>
-                </div>
-            </div>
-        </section>
+  <!-- JS (RELATIVO) -->
+  <script src="js/nav-footer.js" defer></script>
+  <script src="js/main.js" defer></script>
 
-        <section class="section faq" data-aos="fade-left">
-            <h2>Perguntas Frequentes</h2>
-            <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
-                <h3>O que é colonialismo epistêmico?</h3>
-                <p>É a imposição de perspectivas de conhecimento ocidentais sobre outras culturas, silenciando saberes
-                    locais.</p>
-            </div>
-            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
-                <h3>Como identificar islamofobia em mídias?</h3>
-                <p>Observando padrões de estereótipos, generalizações e desumanização de pessoas e culturas islâmicas.
-                </p>
-            </div>
-            <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
-                <h3>Qual é a relação entre colonialismo e conhecimento?</h3>
-                <p>Colonialismo histórico moldou a forma como certos saberes foram valorizados ou marginalizados.</p>
-            </div>
-        </section>
+  <!-- AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.AOS) {
+        AOS.init();
+      }
+    });
+  </script>
 
-        <section class="section destaque" data-aos="fade-up">
-            <h2>Como você lê o mundo?</h2>
-            <p>Nossas percepções não são neutras. Elas são construídas por narrativas, imagens e discursos
-                historicamente situados.</p>
-            <a href="pages/avaliacao/autoavaliacao.html" class="btn primary">Fazer autoavaliação</a>
-        </section>
-    </main>
-    <div id="footer"></div>
-    <script>
-        AOS.init({});
-    </script>
 </body>
-
 </html>
