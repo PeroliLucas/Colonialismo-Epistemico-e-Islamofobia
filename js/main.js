@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ACCORDION IMPACTOS SOCIAIS PAG 2
   // =================================
   const impactoCards = document.querySelectorAll(".impactos-sociais .impactos");
-  impactoCards.forEach(card => {
+  impactoCards.forEach((card) => {
     const title = card.querySelector("h3");
     const content = card.querySelector("p");
     if (!title || !content) return;
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const isOpen = card.classList.contains("open");
 
       // Fecha todos
-      impactoCards.forEach(c => {
+      impactoCards.forEach((c) => {
         c.classList.remove("open");
         const p = c.querySelector("p");
         if (p) p.style.maxHeight = null;
@@ -161,13 +161,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabs = document.querySelectorAll(".tab-btn");
   const cards = document.querySelectorAll(".card.conteudo");
 
-  tabs.forEach(tab => {
+  tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
-      tabs.forEach(t => t.classList.remove("active"));
+      tabs.forEach((t) => t.classList.remove("active"));
       tab.classList.add("active");
 
       const filter = tab.dataset.filter;
-      cards.forEach(card => {
+      cards.forEach((card) => {
         if (!card) return;
         if (filter === "todos" || card.classList.contains(filter)) {
           card.style.display = "block";
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // =========================================
   const estereotipoCards = document.querySelectorAll(".card-estereotipo");
 
-  estereotipoCards.forEach(card => {
+  estereotipoCards.forEach((card) => {
     const contraponto = card.querySelector(".contraponto");
     if (!contraponto) return;
 
@@ -218,13 +218,35 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================================
   // LINHA DO TEMPO PAG 2
   // ================================
-  document.querySelectorAll(".linha-tempo .evento button").forEach(btn => {
+  document.querySelectorAll(".linha-tempo .evento button").forEach((btn) => {
     btn.addEventListener("click", () => {
       const contexto = btn.nextElementSibling;
       if (!contexto) return;
-      const aberto = contexto.style.maxHeight && contexto.style.maxHeight !== "0px";
+      const aberto =
+        contexto.style.maxHeight && contexto.style.maxHeight !== "0px";
       contexto.style.maxHeight = aberto ? "0" : contexto.scrollHeight + "px";
       btn.textContent = aberto ? "Ver contexto" : "Ocultar contexto";
+    });
+  });
+
+  // ================================
+  // LINHA DO TEMPO PAG 3
+  // ================================
+  const botoes = document.querySelectorAll(".marco .botao-analise");
+
+  let marcoAtivo = null;
+
+  botoes.forEach((botao) => {
+    botao.addEventListener("click", () => {
+      const conteudo = botao.closest(".conteudo-marco");
+
+      if (marcoAtivo && marcoAtivo !== conteudo) {
+        marcoAtivo.classList.remove("ativo");
+      }
+
+      conteudo.classList.toggle("ativo");
+
+      marcoAtivo = conteudo.classList.contains("ativo") ? conteudo : null;
     });
   });
 });

@@ -314,7 +314,7 @@
   text-align: center;
   font-size: 1.6rem;
   font-family: var(--fonte-titulo);
-  color: var(--verde-palestina);
+  color: var(--verde-oliva);
   margin-bottom: 0.5rem;
 }
 
@@ -533,4 +533,176 @@
   background-color: var(--vermelho-vinho);
   color: #fff;
   transform: translateX(6px);
+}
+/* ================================ TIMELINE MINIMALISTA ================================ */
+
+.linha-tempo-islamofobia {
+  padding: 80px 20px;
+  background-color: var(--branco-quente);
+}
+
+.linha-tempo-islamofobia h2 {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--preto-profundo);
+  margin-bottom: 20px;
+}
+
+.linha-tempo-islamofobia .conteudo-marco h3 {
+   color: var(--vermelho-vinho-hover);
+}
+
+.linha-tempo-islamofobia p.descricao-linha-tempo {
+    text-align: left;
+}
+
+.linha-tempo-islamofobia strong {
+    color: var(--vermelho-vinho-hover);   
+}
+
+.descricao-linha-tempo {
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* CONTAINER CENTRAL */
+.container-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* LINHA CENTRAL FININHA */
+.container-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #ccc;
+  transform: translateX(-50%);
+}
+
+/* MARCOS */
+.marco {
+  position: relative;
+  width: 50%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
+
+.marco-esquerda {
+  left: 0;
+  text-align: right;
+}
+
+.marco-direita {
+  left: 50%;
+  text-align: left;
+}
+
+/* ANO */
+.ano-marco {
+  display: block;
+  font-weight: 600;
+  color: var(--vermelho-vinho);
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+/* CONTEÚDO DO MARCO */
+.conteudo-marco {
+  background-color: #f9f9f9;
+  color: #222;
+  padding: 18px 20px;
+  border-radius: 8px;
+  border-left: 3px solid var(--verde-oliva);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.conteudo-marco h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  color: var(--preto-profundo);
+}
+
+.conteudo-marco p {
+  margin: 8px 0;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* BOLINHA NA LINHA */
+.marco::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: var(--verde-oliva);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  top: 20px;
+  z-index: 2;
+}
+
+.marco-esquerda::before {
+  right: -7px;
+}
+
+.marco-direita::before {
+  left: -7px;
+}
+
+/* CONTEXTO EXTRA */
+.contexto-marco {
+  display: none;
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 0.95rem;
+  color: #555;
+  background-color: #eee;
+  border-radius: 6px;
+}
+
+
+[data-aos="fade-up"].aos-animate .conteudo-marco {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contexto-marco {
+  display: none;
+  padding-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.conteudo-marco.ativo .contexto-marco {
+  display: block;
+}
+
+.botao-analise {
+  margin-top: 0.5rem;
+  background-color: var(--vermelho-vinho);
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.botao-analise:hover {
+  background-color: var(--vermelho-vinho-hover);
 }
