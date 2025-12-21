@@ -1,50 +1,335 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narrativas Midiáticas | Projeto</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Narrativas Midiáticas | Projeto</title>
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- FONTS -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap"
-    rel="stylesheet">
+    <!-- AOS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
 
-  <!-- AOS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- CSS GLOBAL -->
+    <link rel="stylesheet" href="../../css/nav-footer.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/responsive.css" />
 
-  <!-- CSS GLOBAL -->
-  <link rel="stylesheet" href="../../css/base.css">
-  <link rel="stylesheet" href="../../css/layout.css">
-  <link rel="stylesheet" href="../../css/nav-footer.css">
-  <link rel="stylesheet" href="../../css/animations.css">
-  <link rel="stylesheet" href="../../css/responsive.css">
+    <!-- CSS ESPECÍFICO -->
+    <link rel="stylesheet" href="../../css/pages/midia.css" />
+  </head>
 
-  <!-- CSS ESPECÍFICO -->
-  <link rel="stylesheet" href="../../css/pages/midia.css">
-</head>
+  <body class="midia narrativas">
+    <header></header>
 
-<body>
+    <!-- BARRA DE PROGRESSO -->
+    <div id="progress-bar"></div>
 
-  <header></header>
+    <main>
+      <!-- =====================================================
+       HERO — TÍTULO IMPACTANTE
+  ====================================================== -->
+      <section class="secao hero" data-aos="fade-up">
+        <div class="hero-content">
+          <h1>
+            Mídia, Poder <br />
+            <span class="linha-secundaria">e Desumanização</span>
+          </h1>
 
-  <main></main>
+          <p>
+            Antes da exclusão jurídica, antes da violência física, existe sempre
+            uma narrativa que a torna aceitável. A mídia não apenas informa —
+            ela organiza o mundo.
+          </p>
+        </div>
+      </section>
 
-  <footer></footer>
+      <!-- =====================================================
+       INTRODUÇÃO À QUESTÃO MIDIÁTICA
+  ====================================================== -->
+      <section
+        class="secao secao-texto"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <h2>Mídia como tecnologia de poder</h2>
+        <p>
+          O colonialismo epistêmico não opera apenas por meio da dominação
+          territorial ou econômica, mas pela imposição de regimes de verdade. A
+          mídia, nesse contexto, funciona como uma tecnologia central de
+          produção de sentidos, definindo quais vidas são inteligíveis, quais
+          histórias merecem circulação e quais sujeitos são reduzidos a
+          categorias fixas.
+        </p>
+        <p>
+          No caso da islamofobia, a mídia atua como um espaço privilegiado de
+          naturalização do olhar colonial. A repetição de enquadramentos
+          específicos — violência, atraso, ameaça, submissão — não apenas
+          informa o público, mas educa o olhar, moldando percepções sociais
+          sobre corpos, práticas religiosas e identidades muçulmanas.
+        </p>
+      </section>
 
-  <!-- JS -->
-  <script src="../../js/nav-footer.js" defer></script>
-  <script src="../../js/main.js" defer></script>
+      <!-- =====================================================
+       CONTEXTUALIZAÇÃO
+  ====================================================== -->
+      <section
+        class="secao secao-texto"
+        data-aos="fade-up"
+        data-aos-delay="150"
+      >
+        <h2>Colonialismo epistêmico e o controle da narrativa</h2>
+        <p>
+          Desde o período colonial, populações muçulmanas foram representadas
+          como objetos de estudo, intervenção e correção. Esse padrão não se
+          dissolve com o fim formal do colonialismo; ele se reconfigura nos
+          discursos midiáticos contemporâneos, especialmente nos contextos de
+          guerra, migração e segurança.
+        </p>
+        <p>
+          O que se observa é a persistência de uma
+          <span
+            class="glossario"
+            data-glossario
+            title="Forma de pensamento que organiza o mundo em oposições rígidas e hierárquicas, como civilizado/barbárie ou racional/irracional, apagando complexidades e legitimando desigualdades."
+          >
+            lógica binária </span
+          >: o Ocidente aparece como espaço da racionalidade, da liberdade e da
+          civilização, enquanto o Islã é frequentemente enquadrado como problema
+          cultural, ameaça geopolítica ou obstáculo à modernidade. A mídia
+          participa ativamente dessa divisão simbólica.
+        </p>
+      </section>
 
-  <!-- AOS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      if (window.AOS) AOS.init();
-    });
-  </script>
+      <!-- =====================================================
+       MANCHETES E ESTEREOTIPIZAÇÃO
+  ====================================================== -->
+      <section
+        class="secao secao-texto"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <h2>Manchetes que produzem estereótipos</h2>
+        <p>
+          A desumanização midiática raramente ocorre por meio de insultos
+          explícitos. Ela se manifesta de forma mais eficaz através de escolhas
+          aparentemente neutras: títulos, imagens,
+          <span
+            class="glossario"
+            data-glossario
+            title="Processo pelo qual a mídia seleciona, organiza e enfatiza certos aspectos da realidade, orientando a interpretação do público e limitando outras leituras possíveis."
+          >
+            enquadramentos midiáticos
+          </span>
+          e silêncios.
+        </p>
 
-</body>
+        <ul class="lista-exemplos">
+          <li data-aos="fade-right">
+            “Ataque islâmico deixa mortos na Europa” — a religião aparece como
+            causa direta da violência.
+          </li>
+          <li data-aos="fade-right" data-aos-delay="100">
+            “Crise migratória: muçulmanos desafiam valores ocidentais” — corpos
+            migrantes são apresentados como ameaça cultural.
+          </li>
+          <li data-aos="fade-right" data-aos-delay="200">
+            “Mulheres muçulmanas libertadas por políticas de proibição do véu” —
+            a agência feminina é apagada em nome de uma narrativa salvacionista.
+          </li>
+        </ul>
 
+        <p>
+          Esses exemplos revelam como a mídia constrói uma associação constante
+          entre Islã, perigo e irracionalidade, reforçando um imaginário social
+          que legitima políticas de exclusão, vigilância e
+          <span
+            class="glossario"
+            data-glossario
+            title="Forma de violência não física que atua por meio de discursos, representações e classificações sociais, naturalizando a exclusão e a inferiorização de determinados grupos."
+          >
+            violência simbólica </span
+          >.
+        </p>
+      </section>
+
+      <!-- =====================================================
+       RELATOS E EXPERIÊNCIAS VIVIDAS
+  ====================================================== -->
+      <section
+        class="secao secao-texto"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <h2>Quando a narrativa atravessa o corpo</h2>
+        <p>
+          Para pessoas muçulmanas, essas narrativas não permanecem no campo
+          abstrato. Elas atravessam o cotidiano, moldando interações sociais,
+          oportunidades de trabalho, abordagens policiais e experiências
+          escolares.
+        </p>
+        <p class="citacao" data-aos="fade-left">
+          “Depois de um atentado que eu não tinha nenhuma relação, passei a ser
+          olhada com medo no transporte público. A mídia falava de ‘terror
+          islâmico’ o tempo todo, e meu corpo virou prova disso.”
+        </p>
+        <p>
+          Relatos como esse evidenciam que a islamofobia midiática não é apenas
+          uma questão de representação, mas de materialização da
+          <span
+            class="glossario"
+            data-glossario
+            title="Violência exercida no plano simbólico que produz efeitos concretos na vida social, afetando o modo como corpos e identidades são percebidos e tratados."
+          >
+            violência simbólica
+          </span>
+          em práticas concretas de exclusão.
+        </p>
+      </section>
+
+      <!-- =====================================================
+       DESENVOLVIMENTO APROFUNDADO
+  ====================================================== -->
+      <section
+        class="secao secao-texto"
+        data-aos="fade-up"
+        data-aos-delay="250"
+      >
+        <h2>A repetição como estratégia de desumanização</h2>
+        <p>
+          O poder da mídia não reside apenas em eventos isolados, mas na
+          repetição sistemática de narrativas. A insistência em certos
+          enquadramentos produz uma sensação de evidência: aquilo que é
+          reiterado passa a parecer natural.
+        </p>
+        <p>
+          Esse processo reduz sujeitos complexos a signos simplificados.
+          Muçulmanos deixam de ser indivíduos com histórias, contradições e
+          vozes próprias e passam a funcionar como categorias abstratas, úteis
+          para justificar agendas políticas, securitárias e econômicas.
+        </p>
+        <p>
+          O colonialismo epistêmico se mantém, assim, não apenas pelo que é
+          dito, mas pelo que não pode ser dito: experiências que não se encaixam
+          na narrativa dominante são silenciadas ou deslegitimadas.
+        </p>
+      </section>
+
+      <!-- =====================================================
+       CONCLUSÃO
+  ====================================================== -->
+      <section
+        class="secao secao-texto"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <h2>Disputar a narrativa é disputar a humanidade</h2>
+        <p>
+          Enfrentar a islamofobia exige mais do que corrigir termos ou aumentar
+          a diversidade de fontes. Exige uma crítica profunda às estruturas que
+          definem quem pode narrar e a partir de qual lugar epistemológico.
+        </p>
+        <p>
+          Disputar a narrativa midiática é disputar o próprio conceito de
+          humanidade. É questionar quem é visto como sujeito legítimo, quem
+          merece empatia e quem pode existir fora das categorias coloniais
+          herdadas.
+        </p>
+      </section>
+
+      <!-- =====================================================
+     QUIZ — LEITURA CRÍTICA DA MÍDIA
+====================================================== -->
+      <section class="secao secao-quiz" data-aos="fade-up">
+        <h2 class="titulo-quiz">Como a mídia constrói sentidos?</h2>
+
+        <p class="descricao-quiz">
+          Leia a manchete apresentada e avalie o tipo de enquadramento
+          midiático. Não há respostas “certas” ou “erradas”, mas categorias
+          analíticas.
+        </p>
+
+        <div class="quiz-container">
+          <div id="quiz-card" class="quiz-card">
+            <!-- PROGRESSO -->
+            <div class="progresso">
+              <span id="contador">Pergunta 1 de 15</span>
+            </div>
+
+            <!-- ENUNCIADO -->
+            <div class="enunciado">
+              <p id="texto-pergunta"></p>
+            </div>
+
+            <!-- ALTERNATIVAS -->
+            <div class="alternativas">
+              <button class="opcao" data-resposta="neutra">Neutra</button>
+              <button class="opcao" data-resposta="ambigua">Ambígua</button>
+              <button class="opcao" data-resposta="estigmatizante">
+                Estigmatizante
+              </button>
+              <button class="opcao" data-resposta="desumanizacao">
+                Desumanizante
+              </button>
+            </div>
+
+            <!-- FEEDBACK -->
+            <div id="feedback" class="feedback oculto">
+              <p id="explicacao"></p>
+
+              <p class="conexao-teorica">
+                Esse tipo de enquadramento dialoga com discussões sobre
+                <a href="../teoria/islamofobia.html">islamofobia estrutural</a>
+                e
+                <a href="../teoria/colonialismo.html">colonialismo epistêmico</a
+                >.
+              </p>
+
+              <button id="proxima" class="btn-proxima">Próxima manchete</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+       SECTION DE DESTAQUE — ÂNCORA
+  ====================================================== -->
+      <section class="secao bloco-destaque" data-aos="zoom-in">
+        <h2>Explore outras dimensões do projeto</h2>
+        <p>
+          A mídia é apenas uma das camadas através das quais o colonialismo
+          epistêmico e a islamofobia operam. Conheça as outras páginas e
+          aprofunde a análise.
+        </p>
+
+        <div class="links-destaque">
+          <a href="colonialismo.html">Colonialismo Epistêmico</a>
+          <a href="islamofobia.html">Islamofobia</a>
+          <a href="dados.html">Dados e Representações</a>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <!-- JS -->
+    <script src="../../js/nav-footer.js" defer></script>
+    <script src="../../js/main.js" defer></script>
+    <script src="../../js/quiz-percepcao.js" defer></script>
+
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.AOS) AOS.init();
+      });
+    </script>
+  </body>
 </html>

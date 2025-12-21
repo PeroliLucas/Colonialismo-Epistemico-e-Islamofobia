@@ -3,90 +3,90 @@
     "id": 1,
     "texto": "Comunidade muçulmana promove evento cultural para aproximar moradores.",
     "categoria": "ambigua",
-    "explicacao": "Embora positiva, a manchete sugere que a comunidade precisa se justificar ou se tornar aceitável aos olhos da sociedade."
+    "explicacao": "Embora a manchete seja positiva, ela insinua que a comunidade precisa se justificar ou conquistar aceitação. O evento cultural é apresentado como uma forma de integração, o que reforça sutis expectativas sociais sobre grupos minoritários."
   },
   {
     "id": 2,
     "texto": "Estudantes muçulmanos discutem diversidade religiosa em escola pública.",
     "categoria": "estigmatizante",
-    "explicacao": "A diversidade aparece como algo trazido por um grupo específico, reforçando a ideia de que o 'normal' está fora dele."
+    "explicacao": "A manchete coloca a diversidade como algo trazido especificamente pelos estudantes muçulmanos, sugerindo que eles são agentes externos de mudança. Isso pode reforçar a percepção de diferença e criar estigmas em relação à identidade religiosa."
   },
   {
     "id": 3,
     "texto": "Mulher muçulmana denuncia discriminação em atendimento público.",
     "categoria": "neutra",
-    "explicacao": "O foco da manchete está na violação de direitos, não na religião como fator de conflito."
+    "explicacao": "O foco da manchete está na denúncia de discriminação, e não na religião da mulher como causa do problema. A informação é apresentada de maneira factual, sem sugerir ameaças ou conflitos culturais."
   },
   {
     "id": 4,
     "texto": "Práticas islâmicas geram debate em município do interior.",
     "categoria": "ambigua",
-    "explicacao": "A palavra 'debate' cria tensão simbólica, mesmo sem indicar oposição concreta ou conflito real."
+    "explicacao": "O uso da palavra 'debate' sugere tensão ou conflito simbólico, mesmo que não haja oposição concreta. Isso pode fazer com que o leitor perceba as práticas islâmicas como potencialmente problemáticas, mesmo que a notícia seja neutra."
   },
   {
     "id": 5,
     "texto": "Costumes muçulmanos dividem opiniões entre moradores da região.",
     "categoria": "ambigua",
-    "explicacao": "A existência cultural é transformada em polêmica, naturalizando o estranhamento como algo legítimo."
+    "explicacao": "Transforma aspectos culturais em objeto de polêmica. Ao enfatizar o conflito de opiniões, a manchete reforça a ideia de estranhamento cultural, naturalizando a percepção de que a diferença religiosa gera controvérsia."
   },
   {
     "id": 6,
     "texto": "Ataque violento reacende discussões sobre imigração islâmica na Europa.",
     "categoria": "estigmatizante",
-    "explicacao": "Um evento específico é usado para sustentar associações amplas entre violência, imigração e religião."
+    "explicacao": "A manchete associa violência a um grupo religioso, generalizando um evento isolado. Isso cria uma narrativa de ameaça e reforça estigmas sobre muçulmanos e imigrantes, mesmo que o incidente seja pontual."
   },
   {
     "id": 7,
     "texto": "Crescimento da população muçulmana preocupa parte dos moradores.",
     "categoria": "desumanizacao",
-    "explicacao": "Pessoas são tratadas como dado demográfico ameaçador, não como indivíduos com histórias e direitos."
+    "explicacao": "A população é tratada como um número ou ameaça demográfica, em vez de indivíduos com direitos e histórias. Isso desumaniza o grupo e sugere que a presença muçulmana é um problema a ser monitorado."
   },
   {
     "id": 8,
     "texto": "Autoridades reforçam monitoramento de comunidades islâmicas após incidente.",
     "categoria": "neutra",
-    "explicacao": "A manchete descreve uma ação estatal, mas normaliza a vigilância direcionada a um grupo específico."
+    "explicacao": "A manchete informa sobre uma ação estatal de forma factual, mas o foco em um grupo específico pode normalizar vigilância direcionada. Embora neutra, ela traz implícita uma atenção especial sobre a comunidade muçulmana."
   },
   {
     "id": 9,
     "texto": "Líder muçulmano entra na mira da polícia após denúncia anônima.",
     "categoria": "estigmatizante",
-    "explicacao": "A identidade religiosa ganha destaque mesmo sem relação comprovada com a investigação."
+    "explicacao": "A manchete destaca a religião do indivíduo sem relação comprovada com o crime. Isso reforça estigmas e associa automaticamente muçulmanos a situações de risco ou suspeita."
   },
   {
     "id": 10,
     "texto": "Medo do avanço islâmico cresce em meio a transformações culturais.",
     "categoria": "ambigua",
-    "explicacao": "O sentimento de medo é apresentado como fato social neutro, sem questionar como ele é produzido."
+    "explicacao": "Apresenta o medo como um fato social, sem questionar sua construção. Isso pode gerar percepção de ameaça cultural, ainda que o contexto seja mais complexo, reforçando sentimentos de insegurança sobre mudanças sociais."
   },
   {
     "id": 11,
     "texto": "Islamismo passa a ser tratado como desafio à identidade nacional.",
     "categoria": "neutra",
-    "explicacao": "A manchete relata um discurso em circulação, mas não deixa claro quem define esse 'desafio'."
+    "explicacao": "A manchete reporta um discurso ou opinião, sem assumir que o islamismo seja realmente um desafio. A informação é factual, sem atribuir juízo moral, mas alerta sobre narrativas sociais em circulação."
   },
   {
     "id": 12,
     "texto": "Valores islâmicos entram em conflito com princípios ocidentais, dizem analistas.",
     "categoria": "estigmatizante",
-    "explicacao": "Reduz culturas complexas a blocos opostos e sugere incompatibilidade como algo natural."
+    "explicacao": "Reduz culturas complexas a blocos opostos e sugere incompatibilidade entre religiões e sociedade. Isso reforça estigmas e a percepção de que o islamismo ameaça valores ocidentais."
   },
   {
     "id": 13,
     "texto": "Especialistas alertam para riscos da expansão do islamismo.",
     "categoria": "desumanizacao",
-    "explicacao": "A linguagem técnica dá legitimidade a um discurso que transforma uma religião em ameaça abstrata."
+    "explicacao": "A linguagem técnica transforma o islamismo em uma ameaça abstrata. Ao generalizar uma religião inteira como risco, a manchete desumaniza os indivíduos e legitima percepções alarmistas."
   },
   {
     "id": 14,
     "texto": "Religião islâmica é apontada como entrave à integração social.",
     "categoria": "ambigua",
-    "explicacao": "O problema é deslocado para a fé, enquanto fatores sociais, políticos e históricos ficam fora de cena."
+    "explicacao": "A responsabilidade pelo problema é deslocada para a religião, enquanto fatores históricos, políticos e sociais ficam de fora. Isso sugere tensão e potencial conflito cultural, mesmo que de forma sutil."
   },
   {
     "id": 15,
     "texto": "Em quantas dessas manchetes o enquadramento passou despercebido para você?",
     "categoria": "metamanchete",
-    "explicacao": "A pergunta agora não é sobre a mídia, mas sobre como você aprendeu a lê-la."
+    "explicacao": "Esta pergunta reflete sobre sua própria percepção durante o quiz. Não há classificação correta: o objetivo é avaliar como você identificou ou deixou passar nuances, estigmas ou neutralidades nas manchetes anteriores."
   }
 ]
