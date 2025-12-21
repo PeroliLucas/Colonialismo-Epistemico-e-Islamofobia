@@ -232,26 +232,127 @@ document.addEventListener("DOMContentLoaded", () => {
   // ================================
   // LINHA DO TEMPO PAG 3
   // ================================
-    const botoes = document.querySelectorAll(".botao-analise");
+  const botoes = document.querySelectorAll(".botao-analise");
 
-      botoes.forEach(botao => {
-        botao.addEventListener("click", () => {
-          const marco = botao.closest(".marco");
-          const ativo = marco.classList.contains("ativo");
+  botoes.forEach((botao) => {
+    botao.addEventListener("click", () => {
+      const marco = botao.closest(".marco");
+      const ativo = marco.classList.contains("ativo");
 
-          // Fecha todos os marcos
-          document.querySelectorAll(".marco").forEach(m => {
-            m.classList.remove("ativo");
-            const b = m.querySelector(".botao-analise");
-            if (b) b.textContent = "Ver análise";
-          });
-
-          // Se não estava ativo, abre
-          if (!ativo) {
-            marco.classList.add("ativo");
-            botao.textContent = "Ocultar análise";
-          }
-        });
+      // Fecha todos os marcos
+      document.querySelectorAll(".marco").forEach((m) => {
+        m.classList.remove("ativo");
+        const b = m.querySelector(".botao-analise");
+        if (b) b.textContent = "Ver análise";
       });
 
+      // Se não estava ativo, abre
+      if (!ativo) {
+        marco.classList.add("ativo");
+        botao.textContent = "Ocultar análise";
+      }
+    });
+  });
+
+  // ================================
+  // GRÁFICO PAG 6
+  // ================================
+  const ctx = document.getElementById('graficoRepresentacao').getContext('2d');
+
+  // Carregar os dados do JSON
+  fetch('../../data/midia/grafico.json')
+    .then(res => res.json())
+    .then(json => {
+      const labels = json.map(item => item.tipo);
+      const valores = json.map(item => item.quantidade);
+      const descricoes = json.map(item => item.descricao);
+
+      // Criar gradientes para cada barra
+      const cores = [
+        ['rgba(108, 117, 125, 0.9)', 'rgba(108, 117, 125, 0.5)'],
+        ['rgba(255, 193, 7, 0.9)', 'rgba(255, 193, 7, 0.5)'],
+        ['rgba(220, 53, 69, 0.9)', 'rgba(220, 53, 69, 0.5)'],
+        ['rgba(139, 0, 0, 0.9)', 'rgba(139, 0, 0, 0.5)']
+      ];
+
+      const backgroundColors = cores.map(cor => {
+        const grad = ctx.createLinearGradient(0, 0, 0, 400);
+        grad.addColorStop(0, cor[0]);
+        grad.addColorStop(1, cor[1]);
+        return grad;
+      });
+
+      const data = {
+        labels: labels,
+        datasets: [{
+          label: 'Quantidade de Representações',
+          data: valores,
+          backgroundColor: backgroundColors,
+          borderRadius: 15,
+          barThickness: 60,
+          borderWidth: 0
+        }]
+      };
+
+      const options = {
+        responsive: true,
+        animation: {
+          duration: 1500,
+          easing: 'easeOutBounce'
+        },
+        plugins: {
+          legend: { display: false },
+          title: {
+            display: true,
+            text: 'Distribuição de Representações na Mídia',
+            font: { size: 24, weight: 'bold' },
+            color: '#0b120e'
+          },
+          tooltip: {
+            backgroundColor: '#0f1a13',
+            titleColor: '#f5f5f5',
+            bodyColor: '#f5f5f5',
+            borderColor: '#c1272d',
+            borderWidth: 1,
+            padding: 10,
+            cornerRadius: 8,
+            callbacks: {
+              label: function(context) {
+                const index = context.dataIndex;
+                return `${context.dataset.data[index]} — ${descricoes[index]}`;
+              }
+            }
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              stepSize: 10,
+              color: '#0b120e',
+              font: { size: 14, weight: 'bold' }
+            },
+            grid: {
+              color: 'rgba(0,0,0,0.05)',
+              borderColor: '#0b120e',
+              borderDash: [5,5]
+            }
+          },
+          x: {
+            ticks: {
+              color: '#0b120e',
+              font: { size: 14, weight: 'bold' }
+            },
+            grid: { display: false }
+          }
+        }
+      };
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: data,
+        options: options
+      });
+    })
+    .catch(err => console.error('Erro ao carregar JSON:', err));
 });

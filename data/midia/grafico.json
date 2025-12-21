@@ -1,0 +1,22 @@
+[
+  {
+    "tipo": "Neutras",
+    "quantidade": 30,
+    "descricao": "Exemplos de representações neutras"
+  },
+  {
+    "tipo": "Ambíguas",
+    "quantidade": 20,
+    "descricao": "Exemplos de representações ambíguas"
+  },
+  {
+    "tipo": "Estigmatizantes",
+    "quantidade": 45,
+    "descricao": "Exemplos de representações estigmatizantes"
+  },
+  {
+    "tipo": "Desumanizantes",
+    "quantidade": 25,
+    "descricao": "Exemplos de representações desumanizantes"
+  }
+]

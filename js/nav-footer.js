@@ -16,7 +16,7 @@ function loadHTML(selector, path) {
     .then(html => {
       el.innerHTML = html;
 
-      // Corrige todos os links internos após carregar
+      // CORREÇÃO DOS LINKS RELATIVOS
       el.querySelectorAll('[data-link]').forEach(link => {
         link.href = BASE_PATH + link.dataset.link;
       });

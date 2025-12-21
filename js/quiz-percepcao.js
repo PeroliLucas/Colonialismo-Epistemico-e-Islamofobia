@@ -26,7 +26,6 @@ const escala = {
 /* ==============================
    CARREGAR PERGUNTAS
 ============================== */
-
 fetch("../../data/midia/perguntas.json")
   .then((res) => res.json())
   .then((dados) => {
@@ -85,7 +84,6 @@ function mostrarPergunta() {
 /* ==============================
    SELEÇÃO DE RESPOSTA
 ============================== */
-
 botoes.forEach((botao) => {
   botao.addEventListener("click", () => {
     const respostaUsuario = botao.dataset.resposta;
@@ -108,7 +106,6 @@ botoes.forEach((botao) => {
 /* ==============================
    FEEDBACK CRÍTICO (GRADUAL)
 ============================== */
-
 function mostrarFeedback(respostaUsuario, respostaEsperada) {
   if (respostaEsperada === "metamanchete") {
     explicacaoEl.innerHTML = `
@@ -151,7 +148,6 @@ function mostrarFeedback(respostaUsuario, respostaEsperada) {
 /* ================================
    PRÓXIMA PERGUNTA / VER RESULTADO
 =================================== */
-
 botaoProxima.addEventListener("click", () => {
   const perguntaAtual = perguntas[indiceAtual];
 
@@ -172,7 +168,6 @@ botaoProxima.addEventListener("click", () => {
 /* ==============================
    FINAL DO QUIZ / PERFIL
 ============================== */
-
 function finalizarQuiz() {
   const mediaCritica = pontuacaoTotal / (perguntas.length - 1); 
   const precisao = acertos / (perguntas.length - 1); 

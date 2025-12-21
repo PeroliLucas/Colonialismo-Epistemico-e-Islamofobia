@@ -280,60 +280,6 @@
       </section>
 
       <!-- =====================================================
-     QUIZ — LEITURA CRÍTICA DA MÍDIA
-====================================================== -->
-      <section class="secao secao-quiz" data-aos="fade-up">
-        <h2 class="titulo-quiz">Como a mídia constrói sentidos?</h2>
-
-        <p class="descricao-quiz">
-          Leia a manchete apresentada e avalie o tipo de enquadramento
-          midiático. Não há respostas “certas” ou “erradas”, mas categorias
-          analíticas.
-        </p>
-
-        <div class="quiz-container">
-          <div id="quiz-card" class="quiz-card">
-            <!-- PROGRESSO -->
-            <div class="progresso">
-              <span id="contador">Pergunta 1 de 15</span>
-            </div>
-
-            <!-- ENUNCIADO -->
-            <div class="enunciado">
-              <p id="texto-pergunta"></p>
-            </div>
-
-            <!-- ALTERNATIVAS -->
-            <div class="alternativas">
-              <button class="opcao" data-resposta="neutra">Neutra</button>
-              <button class="opcao" data-resposta="ambigua">Ambígua</button>
-              <button class="opcao" data-resposta="estigmatizante">
-                Estigmatizante
-              </button>
-              <button class="opcao" data-resposta="desumanizacao">
-                Desumanizante
-              </button>
-            </div>
-
-            <!-- FEEDBACK -->
-            <div id="feedback" class="feedback oculto">
-              <p id="explicacao"></p>
-
-              <p class="conexao-teorica">
-                Esse tipo de enquadramento dialoga com discussões sobre
-                <a href="../teoria/islamofobia.html">islamofobia estrutural</a>
-                e
-                <a href="../teoria/colonialismo.html">colonialismo epistêmico</a
-                >.
-              </p>
-
-              <button id="proxima" class="btn-proxima">Próxima manchete</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- =====================================================
        SECTION DE DESTAQUE — ÂNCORA
   ====================================================== -->
       <section class="secao bloco-destaque" data-aos="zoom-in">
@@ -345,9 +291,9 @@
         </p>
 
         <div class="links-destaque">
-          <a href="colonialismo.html">Colonialismo Epistêmico</a>
-          <a href="islamofobia.html">Islamofobia</a>
-          <a href="dados.html">Dados e Representações</a>
+          <a href="../teoria/colonialismo.html">Colonialismo Epistêmico</a>
+          <a href="../midia/representacao.html">Representações Midiáticas</a>
+          <a href="../interativo/dados.html">Dados e Representações</a>
         </div>
       </section>
     </main>
@@ -365,9 +311,7 @@
       document.addEventListener("DOMContentLoaded", () => {
         if (window.AOS) AOS.init();
 
-        // ================================
-        // CARROSSEL DE MANCHETES
-        // ================================
+        // CARROSSEL DE REPRESENTAÇÃO
         const mancheteTexto = document.getElementById("manchete-texto");
         const botoesEnquadramento = document.querySelectorAll(
           ".botoes-enquadramento button"
@@ -399,16 +343,17 @@
           indicador.innerText = `${indiceAtual + 1} / ${manchetes.length}`;
         }
 
-        // Carrega manchetes do JSON
+        // Carrega representações do JSON
         fetch("../../data/midia/carrossel.json")
           .then((res) => res.json())
           .then((data) => {
             manchetes = data;
             atualizarManchete();
           })
-          .catch((err) => console.error("Erro ao carregar manchetes:", err));
+          .catch((err) =>
+            console.error("Erro ao carregar representações:", err)
+          );
 
-        // Seleção de enquadramento
         botoesEnquadramento.forEach((btn) => {
           btn.addEventListener("click", () => {
             if (!manchetes.length) return;
@@ -417,7 +362,6 @@
           });
         });
 
-        // Navegação do carrossel com loop
         prevBtn.addEventListener("click", () => {
           if (!manchetes.length) return;
           indiceAtual = (indiceAtual - 1 + manchetes.length) % manchetes.length;
