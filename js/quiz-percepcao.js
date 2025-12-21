@@ -4,7 +4,7 @@
 let perguntas = [];
 let indiceAtual = 0;
 let pontuacaoTotal = 0;
-let acertos = 0;
+let acertos = 0; 
 
 const textoPergunta = document.getElementById("texto-pergunta");
 const botoes = document.querySelectorAll(".opcao");
@@ -27,7 +27,7 @@ const escala = {
    CARREGAR PERGUNTAS
 ============================== */
 
-fetch("../../data/perguntas.json")
+fetch("../../data/midia/perguntas.json")
   .then((res) => res.json())
   .then((dados) => {
     perguntas = dados;
@@ -174,8 +174,8 @@ botaoProxima.addEventListener("click", () => {
 ============================== */
 
 function finalizarQuiz() {
-  const mediaCritica = pontuacaoTotal / (perguntas.length - 1);
-  const precisao = acertos / (perguntas.length - 1);
+  const mediaCritica = pontuacaoTotal / (perguntas.length - 1); 
+  const precisao = acertos / (perguntas.length - 1); 
   let reflexao = "";
   let detalheNeutro = "";
   let perfil = "";

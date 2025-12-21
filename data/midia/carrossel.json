@@ -1,0 +1,50 @@
+[
+  {
+    "tituloBase": "Autoridades investigam incidente ocorrido na cidade.",
+    "titulos": {
+      "neutra": "Autoridades investigam incidente ocorrido na cidade.",
+      "ambigua": "Autoridades investigam incidente preocupante na cidade: tensão cresce.",
+      "estigmatizante": "Comunidade local está sob suspeita após incidente inesperado.",
+      "desumanizacao": "Grupo é tratado como ameaça abstrata após incidente, apagando suas identidades."
+    },
+    "explicacoes": {
+      "neutra": "O foco está nos fatos e na investigação, sem atribuir culpa, ameaça ou julgamento moral. A manchete transmite informação objetiva, permitindo ao leitor formar sua própria interpretação.",
+      "ambigua": "Sugere preocupação ou tensão sem indicar culpabilidade direta. O leitor é conduzido a sentir que algo pode estar errado, mesmo que não haja evidências claras de envolvimento de um grupo específico.",
+      "estigmatizante": "Um grupo é explicitamente destacado, criando associação entre o incidente e a identidade coletiva. Isso reforça estereótipos e preconceitos, tornando o leitor mais propenso a generalizações injustas.",
+      "desumanizacao": "O grupo é transformado em símbolo de ameaça, reduzindo indivíduos complexos a entidades abstratas. Essa abordagem elimina a humanidade e a diversidade do grupo, tornando-o objeto de medo ou controle social."
+    },
+    "selecao": "neutra"
+  },
+  {
+    "tituloBase": "Grupo local organiza evento cultural.",
+    "titulos": {
+      "neutra": "Grupo local organiza evento cultural na cidade.",
+      "ambigua": "Evento cultural do grupo desperta curiosidade e questionamentos entre moradores.",
+      "estigmatizante": "Evento cultural do grupo provoca polêmica e críticas na comunidade.",
+      "desumanizacao": "Evento cultural é usado para reduzir o grupo a estereótipo, apagando vozes e histórias individuais."
+    },
+    "explicacoes": {
+      "neutra": "A manchete relata o evento de forma factual, sem juízo moral ou interpretações implícitas. Permite que o leitor compreenda a ação sem associar atributos negativos ao grupo.",
+      "ambigua": "A manchete cria sensação de alerta ou estranhamento, sugerindo que o evento pode gerar consequências imprevistas, sem acusar ninguém diretamente.",
+      "estigmatizante": "Destaca o grupo como diferente ou problemático, reforçando preconceitos sociais. A atenção do leitor é direcionada para a identidade do grupo, não para o conteúdo do evento.",
+      "desumanizacao": "Transforma o grupo em um símbolo ou ameaça abstrata, apagando a diversidade, a agência e as experiências individuais. A narrativa passa a reduzir seres humanos a categorias simplificadas."
+    },
+    "selecao": "neutra"
+  },
+  {
+    "tituloBase": "Incidente na escola envolve estudantes de diferentes religiões.",
+    "titulos": {
+      "neutra": "Incidente na escola envolve estudantes de diferentes religiões.",
+      "ambigua": "Incidente na escola provoca debates sobre diversidade religiosa e tensão social.",
+      "estigmatizante": "Estudantes de determinada religião são destacados como responsáveis pelo incidente.",
+      "desumanizacao": "Estudantes são reduzidos a símbolos de um grupo religioso, apagando suas identidades e histórias individuais."
+    },
+    "explicacoes": {
+      "neutra": "O foco está no evento em si, sem generalizações sobre os estudantes. Permite ao leitor entender os fatos sem atribuir culpa ou criar medo.",
+      "ambigua": "Sugere tensão ou preocupação simbólica, fazendo o leitor questionar a convivência entre grupos religiosos sem acusar diretamente ninguém.",
+      "estigmatizante": "Dá destaque a um grupo específico, reforçando estereótipos e preconceitos. O leitor pode associar o incidente à identidade do grupo em vez das circunstâncias reais.",
+      "desumanizacao": "Reduz estudantes a representantes abstratos de um grupo religioso. As individualidades, histórias e experiências são apagadas, transformando-os em símbolos de ameaça ou problema social."
+    },
+    "selecao": "neutra"
+  }
+]

@@ -160,6 +160,41 @@
         </p>
       </section>
 
+      <section class="secao secao-carrossel" data-aos="fade-up">
+        <h2>Experimente diferentes enquadramentos</h2>
+        <p>
+          Escolha como cada manchete poderia ser enquadrada e observe os efeitos
+          simbólicos.
+        </p>
+
+        <div class="carrossel-container">
+          <!-- Manchetes -->
+          <div class="manchete-card">
+            <p class="manchete-texto" id="manchete-texto"></p>
+
+            <div class="botoes-enquadramento">
+              <button data-enquadramento="neutra">Neutra</button>
+              <button data-enquadramento="ambigua">Ambígua</button>
+              <button data-enquadramento="estigmatizante">
+                Estigmatizante
+              </button>
+              <button data-enquadramento="desumanizacao">Desumanizante</button>
+            </div>
+
+            <div class="explicacao-enquadramento" id="explicacao-enquadramento">
+              <p>Escolha um enquadramento para ver como a narrativa muda.</p>
+            </div>
+          </div>
+
+          <!-- Navegação do carrossel -->
+          <div class="carrossel-navegacao">
+            <button id="prev-man" class="btn-proxima">Próxima manchete</button>
+            <span id="indicador">1 / 3</span>
+            <button id="next-man" class="btn-proxima">Próxima manchete</button>
+          </div>
+        </div>
+      </section>
+
       <!-- =====================================================
        RELATOS E EXPERIÊNCIAS VIVIDAS
   ====================================================== -->
@@ -329,6 +364,71 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         if (window.AOS) AOS.init();
+
+        // ================================
+        // CARROSSEL DE MANCHETES
+        // ================================
+        const mancheteTexto = document.getElementById("manchete-texto");
+        const botoesEnquadramento = document.querySelectorAll(
+          ".botoes-enquadramento button"
+        );
+        const explicacaoEnquadramento = document.getElementById(
+          "explicacao-enquadramento"
+        );
+        const prevBtn = document.getElementById("prev-man");
+        const nextBtn = document.getElementById("next-man");
+        const indicador = document.getElementById("indicador");
+
+        let manchetes = [];
+        let indiceAtual = 0;
+
+        function atualizarManchete() {
+          if (!manchetes.length) return;
+          const atual = manchetes[indiceAtual];
+
+          mancheteTexto.innerText = atual.titulos[atual.selecao];
+          explicacaoEnquadramento.innerText = atual.explicacoes[atual.selecao];
+
+          botoesEnquadramento.forEach((btn) => {
+            btn.classList.remove("selecionado");
+            if (btn.dataset.enquadramento === atual.selecao) {
+              btn.classList.add("selecionado");
+            }
+          });
+
+          indicador.innerText = `${indiceAtual + 1} / ${manchetes.length}`;
+        }
+
+        // Carrega manchetes do JSON
+        fetch("../../data/midia/carrossel.json")
+          .then((res) => res.json())
+          .then((data) => {
+            manchetes = data;
+            atualizarManchete();
+          })
+          .catch((err) => console.error("Erro ao carregar manchetes:", err));
+
+        // Seleção de enquadramento
+        botoesEnquadramento.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            if (!manchetes.length) return;
+            manchetes[indiceAtual].selecao = btn.dataset.enquadramento;
+            atualizarManchete();
+          });
+        });
+
+        // Navegação do carrossel com loop
+        prevBtn.addEventListener("click", () => {
+          if (!manchetes.length) return;
+          indiceAtual = (indiceAtual - 1 + manchetes.length) % manchetes.length;
+          atualizarManchete();
+        });
+
+        nextBtn.addEventListener("click", () => {
+          if (!manchetes.length) return;
+          indiceAtual = (indiceAtual + 1) % manchetes.length;
+          atualizarManchete();
+        });
       });
     </script>
   </body>
